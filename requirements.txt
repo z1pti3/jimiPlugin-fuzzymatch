@@ -1,0 +1,3 @@
+fuzzywuzzy
+jellyfish
+python-Levenshtein

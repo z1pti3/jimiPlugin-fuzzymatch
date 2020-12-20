@@ -1,6 +1,6 @@
 from core import plugin, model
 
-class _fuzzymatch(plugin._plugin):
+class _fuzzymatch(plugin._plugin): 
     version = 0.2
 
     def install(self):

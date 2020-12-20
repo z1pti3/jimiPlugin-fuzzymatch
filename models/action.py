@@ -1,7 +1,7 @@
 from fuzzywuzzy import fuzz
 import jellyfish
 from core.models import action
-from core import auth, db, helpers
+from core import auth, db, helpers 
 
 class _fuzzymatchString(action._action):
     checkString = str()

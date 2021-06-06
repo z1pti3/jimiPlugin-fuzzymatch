@@ -1,0 +1,166 @@
+{
+   "name": "fuzzymatch",
+   "author": "z1p",
+   "version": 0.2,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "fuzzymatchString": {
+         "display_name": "fuzzymatchString",
+         "className": "_fuzzymatchString",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "checkString",
+               "schema_value": "checkString",
+               "type": "input",
+               "label": "checkString",
+               "description": ""
+            },
+            {
+               "schema_item": "matchString",
+               "schema_value": "matchString",
+               "type": "input",
+               "label": "matchString",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "fuzzymatchList": {
+         "display_name": "fuzzymatchList",
+         "className": "_fuzzymatchList",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "checkString",
+               "schema_value": "checkString",
+               "type": "input",
+               "label": "checkString",
+               "description": ""
+            },
+            {
+               "schema_item": "matchList",
+               "schema_value": "matchList",
+               "type": "json-input",
+               "label": "matchList",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "fuzzymatchLevenshteinDistance": {
+         "display_name": "fuzzymatchLevenshteinDistance",
+         "className": "_fuzzymatchLevenshteinDistance",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "checkString",
+               "schema_value": "checkString",
+               "type": "input",
+               "label": "checkString",
+               "description": ""
+            },
+            {
+               "schema_item": "matchString",
+               "schema_value": "matchString",
+               "type": "input",
+               "label": "matchString",
+               "description": ""
+            },
+            {
+               "schema_item": "matchAboveScore",
+               "schema_value": "matchAboveScore",
+               "type": "input",
+               "label": "matchAboveScore",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
